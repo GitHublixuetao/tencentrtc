@@ -22,9 +22,9 @@ class Tencentrtc
 
     public function __construct()
     {
-        $this->sdkAppID = config('tencent.ilive.sdkAppID');
-        $this->private_key = config('tencent.ilive.private_key');
-        $this->public_key = config('tencent.ilive.public_key');
+        $this->sdkAppID = config('tencentrtc.ilive.sdkAppID');
+        $this->private_key = config('tencentrtc.private_key');
+        $this->public_key = config('tencentrtc.public_key');
     }
 
     public function getVerifyUserSig($roomid , $userid)
